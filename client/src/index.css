@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+p,
+button,
+a {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Playfair Display', serif;
+}
+/* 
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: lightgray;
+    border-radius: 10vh;
+} */
+
+/* .gutter {
+    scrollbar-gutter: stable;
+} */
+
+.lazy-image {
+    aspect-ratio: 4/3;
+    object-fit: contain;
+    transition: opacity 0.1s ease-in-out !important;
+}
+
+.lazy-image.loaded {
+    opacity: 1; /* Visible once loaded */
+}
